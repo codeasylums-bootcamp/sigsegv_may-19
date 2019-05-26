@@ -7,20 +7,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
-
+        <script src="partyWise.js"></script>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
           google.charts.load('current', {'packages':['corechart']});
           google.charts.setOnLoadCallback(drawChart);
      
           function drawChart() {
-           
+          //  var st = stateIDWise[33];
             var data = google.visualization.arrayToDataTable([
               ['Party Name', 'Vote Percentage'],
-              ['BJP',     11],
-              ['Congress',      2],
-              ['BSP+Sp',  2],
-             
+              [stateIDWise[33][1].party,     parseInt(stateIDWise[33][1].seatsWon)],
+              [stateIDWise[33][2].party,     parseInt(stateIDWise[33][2].seatsWon)],
+              [stateIDWise[33][3].party,     parseInt(stateIDWise[33][3].seatsWon)],
+              [stateIDWise[33][4].party,     parseInt(stateIDWise[33][4].seatsWon)]
               
             ]);
      
