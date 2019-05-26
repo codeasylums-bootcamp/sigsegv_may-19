@@ -32,7 +32,7 @@ var stateIDWise =
     '2':{
         "party":"Bhartiya Janta Party",
         "seatsWon":"9"
-        }
+        },
         '3':{"party":"Independent",
         "seatsWon" :"1"
     },
@@ -274,13 +274,25 @@ var stateIDWise =
             "seatsWon":"1"
             }
         },'33' : { 
-            '1':{"party":"Bharatiya Janata Party",
-            "seatsWon" :"24"
+            '1':{"party":"Apna Dal (Soneylal)",
+            "seatsWon" :"2"
         },
         '2':{
-            "party":"Rashtriya Loktantrik Party",
-            "seatsWon":"1"
-            }
+            "party":"Bahujan Samaj Party",
+            "seatsWon":"10"
+            },
+            '3':{
+                "party":"Bharatiya Janata Party",
+                "seatsWon":"62"
+                },
+                '4':{
+                    "party":"Indian National Congress",
+                    "seatsWon":"1"
+                    },
+                    '4':{
+                        "party":"Samajwadi Party",
+                        "seatsWon":"5"
+                        }
         },'34' : { 
             '1':{"party":"Bharatiya Janata Party",
             "seatsWon" :"24"
