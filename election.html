@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Bootstrap Example</title>
+<title>ELECTIONS</title>
 <meta charset="utf-8">
 <style>
 .column{
@@ -31,7 +31,48 @@ object-fit: cover;
 /* faster sliding speed */
 
 </style>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script type="text/javascript">
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   Highcharts.setOptions({
+     colors: ['orange', 'blue', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4','red', 'green', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+    });
+   function drawChart() {
+   
+     var data = google.visualization.arrayToDataTable([
+       ['Party Name', 'Vote Percentage'],
+       ['BJP',     303],
+       ['Congress', 52],
+       ['DMK',  23],
+       ['AITC', 22],
+       ['YSRCP',22],
+       ['SHS',18],
+       ['JD(U)',16],
+       ['BJD',12],
+       ['TRS',9],
+       ['LJP',6],
+       ['NCP',5],
+       ['SP',5],
+       ['CPI',3],
+       ['IUML',3],
+       ['TDP',3],
+       ['OTHERS',40]
 
+
+
+       
+     ]);
+
+     var options = {
+       title: 'SEAT PERCENTAGE'
+     };
+
+     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+     chart.draw(data, options);
+   }
+ </script>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -48,13 +89,9 @@ object-fit: cover;
 <li class="active"><a href="#">Home</a></li>
 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RESULTS <span class="caret"></span></a>
 <ul class="dropdown-menu">
-<li><a href="#">Page 1-1</a></li>
-<li><a href="#">Page 1-2</a></li>
-<li><a href="#">Page 1-3</a></li>
+        <li><a href="results.html">MAPwise results</a></li>
 </ul>
 </li>
-<li><a href="#">Page 2</a></li>
-<li><a href="#">Page 3</a></li>
 </ul>
 </div>
 </nav>
@@ -104,7 +141,20 @@ object-fit: cover;
 </div>
 </div>
 
-<div style="margin-top: 40%; height:5%;width: 100%;display:inline-block">
+
+
+
+
+<div id="piechart" style="width: 900px; height: 668px; display: inline-block;margin-left: 254px"></div>
+
+
+
+
+
+
+
+
+<div style="margin-top: 7%; height:5%;width: 100%;display:inline-block">
     
     
     <div class="column"><a href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party" target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/31j%2BReXjrEL.jpg"></a></div>
