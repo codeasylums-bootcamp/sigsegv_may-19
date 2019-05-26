@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<style>
+.column{
+    float: left;
+    width: 7%;
+    height: 20%;
+    padding: 5px;   
+}
+.carousel-inner{
+height: 425px;
+}
+
+.item, img{
+height: 100% !important;
+width: 100% !important;
+
+}
+.carousel-caption{
+color: black;
+}
+
+/*.carousel.carousel-inner img {
+display:block;
+object-fit: cover;
+}
+
+/* faster sliding speed */
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" style="margin-bottom: 0%">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">SIGSEV</a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">RESULTS <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Page 1-1</a></li>
+<li><a href="#">Page 1-2</a></li>
+<li><a href="#">Page 1-3</a></li>
+</ul>
+</li>
+<li><a href="#">Page 2</a></li>
+<li><a href="#">Page 3</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="container" style="margin-left: 0%; margin-right:0%; width: 100%">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+<div class="item active">
+<a href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party" target="_blank"><img src="http://i.dawn.com/large/2014/04/534ba62b4219d.jpg" alt="BJP" style="width: 100% " >
+</a>
+<div class="carousel-caption">
+<h3 style="color: black">BJP</h3>
+<p style="color: black">303/543</p>
+</div>
+</div>
+<div class="item">
+<a href="https://en.wikipedia.org/wiki/Indian_National_Congress" target="_blank"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_the_Indian_National_Congress.svg/1200px-Flag_of_the_Indian_National_Congress.svg.png" alt="INC" style="width: 100% ">
+</a>
+<div class="carousel-caption">
+<h3 style="color: black">INC</h3>
+<p style="color: black">52/543</p>
+</div>
+</div>
+<div class="item">
+<a href="https://en.wikipedia.org/wiki/YSR_Congress_Party" target="_blank">
+<img src="https://www.apherald.com/ImageStore/images/politics/politics_latestnews/0897uoujlkjl-647x450.jpg" alt="New york" style="width: 100%">
+</a>
+<div class="carousel-caption">
+<h3 style="color: black">YSR</h3>
+<p style="color: black">25/25</p>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+<div style="margin-top: 40%; height:5%;width: 100%;display:inline-block">
+    
+    
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Bharatiya_Janata_Party" target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/31j%2BReXjrEL.jpg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Indian_National_Congress" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_the_Indian_National_Congress.svg/1200px-Flag_of_the_Indian_National_Congress.svg.png" ></a></div>
+     <div class="column"><a href="https://en.wikipedia.org/wiki/Dravida_Munnetra_Kazhagam"target="_blank"><img src="https://images.assettype.com/thelede%2F2019-04%2F1ed25e99-0d38-4ece-9a0c-c500abe8a3fa%2FDMK_MAIN_PIC.jpg?w=480&auto=format%2Ccompress&fit=max"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/All_India_Trinamool_Congress"target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/All_India_Trinamool_Congress_flag.svg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/YSR_Congress_Party" target="_blank"><img src="https://www.apherald.com/ImageStore/images/politics/politics_latestnews/0897uoujlkjl-647x450.jpg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Shiv_Sena"target="_blank"><img src="http://myneta.info/party/lib/img/party/30.png"></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Janata_Dal_(United)"target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Janata_Dal_%28United%29_Flag.svg/1200px-Janata_Dal_%28United%29_Flag.svg.png" ></a></div>
+     <div class="column"><a href="https://en.wikipedia.org/wiki/Samajwadi_Party"target="_blank"><img src="https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-id1b2s2jeeel81vk3t6l6br7e5-20170105012019.jpeg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Telangana_Rashtra_Samithi"target="_blank"><img src="https://static-news.moneycontrol.com/static-mcnews/2018/08/trs-logo-770x433.jpg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Communist_Party_of_India"target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/CPI-banner.svg/1200px-CPI-banner.svg.png"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Telugu_Desam_Party"target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/TDPFlag.PNG"></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Aam_Aadmi_Party"target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUAYivo2TRWtxUxQr4Xhh6C_haIvcDyuC2cFkZRom1QpaGvxg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/All_India_Majlis-e-Ittehadul_Muslimeen"target="_blank"><img src="https://static.toiimg.com/thumb/resizemode-4,width-1200,msid-66840599/66840599.jpg"></a></div>
+    <div class="column"><a href="https://en.wikipedia.org/wiki/Bahujan_Samaj_Party"target="_blank"><img src="https://seeklogo.com/images/B/bsp-logo-450EC6A522-seeklogo.com.png"></a></div>
+
+
+</div>
+</body>
+</html>
+
